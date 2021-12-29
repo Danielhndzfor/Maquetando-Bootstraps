@@ -12,7 +12,7 @@
   <title>Maquetando con Bootstrap</title>
 </head>
 
-<body>
+<body class="bg-secondary">
 
   <div class="container-fluid">
     <nav class="navbar navbar-expand-md navbar-light bg-light border-3 border-bottom border-primary">
@@ -27,7 +27,7 @@
             <li class="nav-item"><a class="nav-link" href="#">QUIENES SOMOS</a></li>
             <li class="nav-item"><a class="nav-link" href="#">SERVICIOS</a></li>
             <li class="nav-item"><a class="nav-link" href="#">NOTICIAS</a></li>
-            <li class="nav-item"><a class="nav-link" href="contacto.html">CONTACTO</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">CONTACTO</a></li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
                 Opciones de Soporte
@@ -43,41 +43,50 @@
       </div>
     </nav>
     <br>
-    <main class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <img src="./img/trabajo2.png" alt="">
+    
+    <section class="d-flex justify-content-center">
+        <div class="card col-sm-6 p-3">
+            <div class="mb-3">
+                <h4>Contacto</h4>
+            </div>
+            <div class="mb-2">
+                <form action="">
+                    <div class="mb-2">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" class="form-control" name="nombre" id="nombre" placeholder="ej:Lucas">
+                    </div>
+                    <div class="mb-2">
+                        <label for="apellido">Apellido</label>
+                        <input type="text" class="form-control" name="apellido" id="apellido" placeholder="ej:Hernandez">
+                    </div>
+                    <div class="mb-2">
+                        <label for="sexo">Sexo</label>
+                        <br>
+                        <input type="radio" name="sexo" id="masculino">Masculino 
+                        <br>
+                        <input type="radio" name="sexo" id="femenino">Femenino
+                    </div>
+                    <div class="mb-2">
+                        <label for="telefono">Telefono</label>
+                        <input type="text" class="form-control" name="telefono" id="telefono" placeholder="ej:3123341234">
+                    </div>
+                    <div class="mb-2">
+                        <label for="correo">Correo</label>
+                        <input type="text" class="form-control" name="correo" id="correo" placeholder="ej:correo@instituto.com">
+                    </div>
+                    <div class="mb-2">
+                        <label for="mensaje">Asunto:</label>
+                        <br>
+                        <textarea name="mensaje" id="mensaje" class="form-control" cols="30" rows="10" placeholder="ej:Me interesa..."></textarea>
+                    </div>
+                    <div>
+                        <button type="submit" class="btn btn-primary">Contactar</button>
+                    </div>
+                </form>
+            </div>
         </div>
-        <div class="col-md-6 text-center my-auto">
-          <h1 class="font-weight-bold">Trabajos de Calidad</h1>
-          <p>Somos una empresa mexicana Lorem ipsum dolor sit amet consectetur.</p>
-          <button class="btn btn-success">Contactanos</button>
-        </div>
-      </div>
-      <br>
-      <div class="row">
-        
-        <div class="col-md-6 text-center my-auto">
-          <h1 class="font-weight-bold">Trabajos de Calidad</h1>
-          <p>Somos una empresa mexicana Lorem ipsum dolor sit amet consectetur.</p>
-          <button class="btn btn-success">Contactanos</button>
-        </div>
-        <div class="col-md-6">
-          <img src="./img/trabajo2.png" alt="">
-        </div>
-      </div>
-      <br>
-      <div class="row">
-        <div class="col-md-6">
-          <img src="./img/trabajo2.png" alt="">
-        </div>
-        <div class="col-md-6 text-center my-auto">
-          <h1 class="font-weight-bold">Trabajos de Calidad</h1>
-          <p>Somos una empresa mexicana Lorem ipsum dolor sit amet consectetur.</p>
-          <button class="btn btn-success">Contactanos</button>
-        </div>
-      </div>
-    </main>
+    </section>
+
     <br>
     <footer class="bg-dark text-white py-4">
       <div class="container">

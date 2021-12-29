@@ -10,3 +10,11 @@ img{
 .container{
     max-width: 900px;
 }
+
+footer{
+    padding-bottom: 100%;
+}
+
+.logo-blanco{
+    width: 300px;
+}
