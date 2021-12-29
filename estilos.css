@@ -1,11 +1,32 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-:root{
-    --color-dark: #1b1b1b;
-    --color-light: #ffffff;
-    --color-gold: #c7b8a5;
+.color0 {
+    background-color: dodgerblue;
+    color: white;
 }
 
+.color1 {
+    background-color: darkcyan;
+    color: white;
+}
+
+.color2 {
+    background-color: beige;
+    color: #3a3a3a;
+}
+
+.color3 {
+    background-color: coral;
+}
+
+.color4 {
+    background-color: crimson;
+    color: white;
+}
+
+.nav{
+    grid-column: 5/12;
+}

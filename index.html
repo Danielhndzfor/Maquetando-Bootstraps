@@ -9,43 +9,49 @@
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="estilos.css">
   <title>Maquetando con Bootstrap</title>
-  <style>
-    .color0 {
-      background-color: dodgerblue;
-      color: white;
-    }
-
-    .color1 {
-      background-color: darkcyan;
-      color: white;
-    }
-
-    .color2 {
-      background-color: beige;
-      color: #3a3a3a;
-    }
-
-    .color3 {
-      background-color: coral;
-    }
-
-    .color4 {
-      background-color: crimson;
-      color: white;
-    }
-  </style>
 </head>
 
 <body>
 
-  <header class="color4">
+  <!-- <header class="color4">
     <div class="container row color4">
-      <h1>header <small>(12 columnas)</small></h1>
-    </div>
+      <div class="logo">
+        <a class="" href="#">WebSiteName</a>
+      </div>
+      <div class="nav">
+        <ul class="navbar-nav">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Page 1</a></li>
+          <li><a href="#">Page 2</a></li>
+          <li><a href="#">Page 3</a></li>
+        </ul>
+      </div>
+    </div> -->
+
+
   </header>
 
   <div class="container-fluid">
-    <section class="row">
+    <nav class="navbar navbar-expand-md navbar-light bg-light border-3 border-bottom border-primary">
+        <div class="container-fluid">
+          <a href="#" class="brand"><img src="./img/Logo Pinxel negro[441] (1).png" alt="Logo"></a>
+          <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#NavMenu">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="NavMenu" class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-3">
+              <li class="nav-item"><a class="nav-link" href="#">INICIO</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">QUIENES SOMOS</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">SERVICIOS</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">NOTICIAS</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">CONTACTO</a></li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+
+    <!-- <section class="row">
       <article class="color3 col-xs-12 col-sm-8 col-md-9 col-lg-9">
         <h3>article</h3>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, odit deleniti dignissimos ipsam, sequi, ex
@@ -60,14 +66,14 @@
           Explicabo corporis ea molestiae repellendus expedita? Cupiditate facilis ad sapiente doloremque quisquam
           tempora expedita, iste, aut numquam dolores quo vero odit consequuntur molestiae minus libero debitis nostrum.
           Reiciendis, adipisci eius.</p>
-          <p> At nam, sapiente neque dolorum aliquam animi quo fuga perferendis eligendi vitae aut doloribus aspernatur,
-            unde ad omnis ratione beatae! Commodi sequi quaerat perferendis. Officia eveniet eaque earum id! Vero?
-            Cumque quisquam possimus vel natus, modi suscipit illum eligendi iusto magni nemo veritatis incidunt quia
-            aspernatur dolore omnis iure quis dolores molestias distinctio delectus dignissimos amet? Magnam, facere
-            tempora? Eligendi.
-            Explicabo corporis ea molestiae repellendus expedita? Cupiditate facilis ad sapiente doloremque quisquam
-            tempora expedita, iste, aut numquam dolores quo vero odit consequuntur molestiae minus libero debitis nostrum.
-            Reiciendis, adipisci eius.</p>
+        <p> At nam, sapiente neque dolorum aliquam animi quo fuga perferendis eligendi vitae aut doloribus aspernatur,
+          unde ad omnis ratione beatae! Commodi sequi quaerat perferendis. Officia eveniet eaque earum id! Vero?
+          Cumque quisquam possimus vel natus, modi suscipit illum eligendi iusto magni nemo veritatis incidunt quia
+          aspernatur dolore omnis iure quis dolores molestias distinctio delectus dignissimos amet? Magnam, facere
+          tempora? Eligendi.
+          Explicabo corporis ea molestiae repellendus expedita? Cupiditate facilis ad sapiente doloremque quisquam
+          tempora expedita, iste, aut numquam dolores quo vero odit consequuntur molestiae minus libero debitis nostrum.
+          Reiciendis, adipisci eius.</p>
       </article>
       <aside class="color4 col-xs-12 col-sm-4 col-md-3 col-lg-3">
         <h3>aside</h3>
@@ -77,7 +83,7 @@
           sapiente
           rerum a optio. Cum voluptates exercitationem dolor deserunt error repellat quasi, voluptas soluta libero
           nostrum!
-          
+
           Repudiandae tempora explicabo sunt dolor nisi ratione, nihil quas, numquam deleniti ducimus, hic in similique.
           Dolorum magnam quaerat autem eos praesentium est iste, quibusdam debitis cupiditate atque voluptatem
           doloribus?
@@ -92,34 +98,38 @@
       <h3>articulo (3 columnas)</h3>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, adipisci! Aliquam, culpa numquam. Quisquam, esse
         incidunt? Sapiente tenetur illum explicabo atque! Rem, id. Ducimus illum ratione laudantium. Et, sequi neque.
-        Repellat recusandae obcaecati provident. Voluptates aperiam debitis numquam fugit totam eius id maxime deserunt, a
+        Repellat recusandae obcaecati provident. Voluptates aperiam debitis numquam fugit totam eius id maxime deserunt,
+        a
         harum! Vero officiis veritatis unde, assumenda libero ex beatae et architecto inventore voluptatem tempora
         repudiandae?</p>
     </div>
-  
+
     <div class="color2 col-xs-12 col-sm-6 col-md-3">
       <h3>articulo (3 columnas)</h3>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, adipisci! Aliquam, culpa numquam. Quisquam, esse
         incidunt? Sapiente tenetur illum explicabo atque! Rem, id. Ducimus illum ratione laudantium. Et, sequi neque.
-        Repellat recusandae obcaecati provident. Voluptates aperiam debitis numquam fugit totam eius id maxime deserunt, a
+        Repellat recusandae obcaecati provident. Voluptates aperiam debitis numquam fugit totam eius id maxime deserunt,
+        a
         harum! Vero officiis veritatis unde, assumenda libero ex beatae et architecto inventore voluptatem tempora
         repudiandae?</p>
     </div>
-  
+
     <div class="color1 col-xs-12 col-sm-6 col-md-3">
       <h3>articulo (3 columnas)</h3>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, adipisci! Aliquam, culpa numquam. Quisquam, esse
         incidunt? Sapiente tenetur illum explicabo atque! Rem, id. Ducimus illum ratione laudantium. Et, sequi neque.
-        Repellat recusandae obcaecati provident. Voluptates aperiam debitis numquam fugit totam eius id maxime deserunt, a
+        Repellat recusandae obcaecati provident. Voluptates aperiam debitis numquam fugit totam eius id maxime deserunt,
+        a
         harum! Vero officiis veritatis unde, assumenda libero ex beatae et architecto inventore voluptatem tempora
         repudiandae?</p>
     </div>
-  
+
     <div class="color2 col-xs-12 col-sm-6 col-md-3">
       <h3>articulo (3 columnas)</h3>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, adipisci! Aliquam, culpa numquam. Quisquam, esse
         incidunt? Sapiente tenetur illum explicabo atque! Rem, id. Ducimus illum ratione laudantium. Et, sequi neque.
-        Repellat recusandae obcaecati provident. Voluptates aperiam debitis numquam fugit totam eius id maxime deserunt, a
+        Repellat recusandae obcaecati provident. Voluptates aperiam debitis numquam fugit totam eius id maxime deserunt,
+        a
         harum! Vero officiis veritatis unde, assumenda libero ex beatae et architecto inventore voluptatem tempora
         repudiandae?</p>
     </div>
@@ -129,7 +139,7 @@
     <div class="container row color0">
       <h1>Footer (12 columnas)</h1>
     </div>
-  </footer>
+  </footer> -->
 
 
 
