@@ -19,3 +19,29 @@ footer{
     width: 300px;
 }
 
+#godown{
+    height: 120px;
+ }
+
+ 
+
+ @media (max-width:700px) {
+    .logo-blanco{
+        width: 250px;
+        
+    }
+    .container{
+        text-align: center;
+    }     
+    .ejem{
+        justify-content: center;
+    }
+ }
+ @media (max-width:576px) {
+    .logo-blanco{
+        width: 200px;
+    }     
+    .container{
+        text-align: center;
+    }
+ }
